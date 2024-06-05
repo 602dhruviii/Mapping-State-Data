@@ -42,7 +42,6 @@ npm start
 - React-Leaflet
 - Chakra UI 
 
-## Screenshots
-### Demo Video
+## Demo Video
 ![Demo](./video.gif)
 
