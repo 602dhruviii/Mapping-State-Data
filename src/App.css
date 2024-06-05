@@ -1,0 +1,20 @@
+/* src/App.css */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #f8f9fa;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
