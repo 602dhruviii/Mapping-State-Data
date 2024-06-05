@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Mapping State Data
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project showcases a WebGIS dashboard that visually represents data on the number of colleges in each state of India. The dashboard uses a dynamic color-coding scheme based on the number of colleges, leveraging Geoserver for spatial data, Leaflet for interactive map rendering, and a custom RESTful API for additional attribute data. The color scheme aligns with the theme color #319795.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Designed to be responsive, ensuring optimal functionality and appearance on various devices, including desktops, tablets, and mobile phones.
 
-### `npm start`
+- Allows users to upload a shapefile of India State Boundaries to Geoserver. Displays detailed information about a state when clicked on the map.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Uses a dynamic color-coding scheme to visually differentiate states based on the number of colleges.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The sidebar transforms into a bottom navbar on smaller screens for better usability on mobile devices.
 
-### `npm test`
+- Integrates Geoserver for serving spatial data. Utilizes Leaflet for rendering an interactive map where users can explore and interact with the data.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+1. **Clone the Repository:** Begin by cloning the repository to your local machine.
+```bash
+git clone https://github.com/602dhruviii/Mapping-State-Data.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies:** Navigate to the project directory and install the necessary dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Configure PostgreSQL:** Ensure you have PostgreSQL installed on your system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Start the Server:** Launch the server to run the application.
 
-### `npm run eject`
+```bash 
+node server.js 
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- Express.js
+- PostgreSQL
+- Geoserver
+- Reactjs
+- React-Leaflet
+- Chakra UI 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Screenshots
+### Demo Video
+![Demo](./video.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
