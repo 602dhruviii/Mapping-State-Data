@@ -6,7 +6,7 @@ This project showcases a WebGIS dashboard that visually represents data on the n
 
 - Designed to be responsive, ensuring optimal functionality and appearance on various devices, including desktops, tablets, and mobile phones.
 
-- Allows users to upload a shapefile of India State Boundaries to Geoserver. Displays detailed information about a state when clicked on the map.
+- Displays detailed information about a state when clicked on the map.
 
 - Uses a dynamic color-coding scheme to visually differentiate states based on the number of colleges.
 
